@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MeuApp</string>
+    <string name="botao_cadastro">Crie sua conta!</string>
+    <string name="link_login">Já tem uma conta? Clique aqui para entrar!</string>
+    <string name="image_octocat"> octocat</string>
+    <string name="title_activity_atividade_login">AtividadeLogin</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="title_activity_atividade_cadastro">AtividadeCadastro</string>
+    <string name="action_name">Nome</string>
+    <string name="action_password">Senha</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="bem_vindo_ao_feather">Bem vindo ao Feather!</string>
+    <string name="FeatherImage">Logo Feather</string>
+    <string name="email_ja_cadastrado">Email ja cadastrado</string>
+    <string name="aceito_os_termos_de_uso">Aceito os termos de uso</string>
+    <string name="novo_usuario">novo usuario</string>
+
+
+</resources>
