@@ -91,7 +91,7 @@
         app:srcCompat="@drawable/userplus" />
 
     <TextView
-        android:id="@+id/erro"
+        android:id="@+id/erroLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"

@@ -1,25 +1,41 @@
 package com.example.meuapp.models;
 
+import androidx.room.Entity;
+import androidx.room.Ignore;
+import androidx.room.Index;
+import androidx.room.PrimaryKey;
+
+@Entity(indices = @Index(value = "email", unique = true))
 public class Usuario {
+    @PrimaryKey(autoGenerate = true)
     private long id;
     private String email;
     private String senha;
+    private Boolean sincronizado = false;
 
-    public Usuario()
-    {
+    public Usuario() {
 
     }
 
-    public Usuario (String email, String senha){
+    @Ignore
+    public Usuario(String email, String senha) {
         this.email = email;
         this.senha = senha;
     }
 
-    public long getId(){
+    public Boolean isSincronizado() {
+        return sincronizado;
+    }
+
+    public void setSincronizado(Boolean sincronizado) {
+        this.sincronizado = sincronizado;
+    }
+
+    public long getId() {
         return id;
     }
 
-    public void setId(long id){
+    public void setId(long id) {
         this.id = id;
     }
 
