@@ -1,6 +1,7 @@
 package com.example.meuapp.activities;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -53,7 +54,7 @@ public class TelaFeed extends AppCompatActivity {
                 for (Postagem postagem : listaPosts) {
                 LinearLayout layout = findViewById(R.id.postsLinearLayout);
                 TextView textViewPost = new TextView(getApplicationContext());
-
+                textViewPost.setTextColor(Color.WHITE);
                 textViewPost.setText(postagem.getTitulo() + "\r\n" + postagem.getTexto() + "\r\n\r\n" );
 
                 layout.addView(textViewPost);
