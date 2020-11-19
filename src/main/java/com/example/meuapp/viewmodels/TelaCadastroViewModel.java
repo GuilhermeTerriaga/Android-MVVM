@@ -8,6 +8,7 @@ import androidx.lifecycle.MutableLiveData;
 
 import com.example.meuapp.R;
 import com.example.meuapp.models.Usuario;
+import com.example.meuapp.repository.PostagemRepository;
 import com.example.meuapp.repository.UsuarioRepository;
 import com.example.meuapp.util.ThreadManager;
 
@@ -16,6 +17,7 @@ public class TelaCadastroViewModel extends AndroidViewModel {
     private UsuarioRepository usuarioRepository;
     private MutableLiveData<Integer> errorMessageCode = new MutableLiveData<>();
     private MutableLiveData<Usuario> usuarioCadastrado = new MutableLiveData<>();
+
 
 
     public TelaCadastroViewModel(Application application) {

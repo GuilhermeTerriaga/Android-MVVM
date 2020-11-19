@@ -27,7 +27,7 @@ public class AtividadeLogin extends AppCompatActivity {
                 mensagemErro.setText(getResources().getString(R.string.credenciais_incorretas));
                 mensagemErro.setVisibility(TextView.VISIBLE);
             } else {
-                Log.i(getClass().getName(), "não logado, ususário vai para o feed, vom id = " + usuario.getId());
+                Log.i(getClass().getName(), "não logado, ususário vai para o feed, com id = " + usuario.getId());
                 Intent intencao = new Intent();
                 intencao.setClass(getApplicationContext(), TelaFeed.class);
                 intencao.putExtra("usuarioId", usuario.getId());
